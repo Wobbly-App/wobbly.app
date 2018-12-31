@@ -11,6 +11,13 @@ body {
 }
 
 /* Text formatting */
+h1, h2, h3 {
+  font-family: 'Rubik', sans-serif;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
 
 h1 {
   font-size: 300%;
@@ -20,7 +27,7 @@ h2 {
   font-size: 200%;
 }
 
-h3 {
+h3, h4 {
   font-size: 135%;
 }
 
@@ -30,12 +37,12 @@ p {
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 600%;
+    font-size: 550%;
   }
   h2 {
     font-size: 300%;
   }
-  h3 {
+  h3, h4 {
     font-size: 150%;
   }
 }
