@@ -42,8 +42,8 @@ p {
 
 /* Padding config */
 .header-padding {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
 }
 
 .main-padding {
@@ -53,8 +53,8 @@ p {
 
 @media only screen and (min-width: 768px) {
   .header-padding {
-    padding-top: 20em;
-    padding-bottom: 20em;
+    padding-top: 10em;
+    padding-bottom: 10em;
   }
   .main-padding {
     padding-top: 3em;
