@@ -10,22 +10,30 @@ body {
   background-position: center center; */
 }
 
-/* Header */
-h1, h3 {
-  color: black;
-}
+/* Text formatting */
 
 h1 {
   font-size: 300%;
+}
+
+h2 {
+  font-size: 200%;
 }
 
 h3 {
   font-size: 135%;
 }
 
+p {
+  font-size: 115%;
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 600%;
+  }
+  h2 {
+    font-size: 300%;
   }
   h3 {
     font-size: 150%;
@@ -38,10 +46,19 @@ h3 {
   padding-bottom: 5em;
 }
 
+.main-padding {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 @media only screen and (min-width: 768px) {
   .header-padding {
     padding-top: 20em;
     padding-bottom: 20em;
+  }
+  .main-padding {
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 }
 
