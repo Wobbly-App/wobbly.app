@@ -40,6 +40,15 @@ p {
   }
 }
 
+/* Icon anchor tags */
+.anchor-icon:link, .anchor-icon:visited, .anchor-icon:active {
+  color: black;
+}
+
+.anchor-icon:hover {
+  color: red;
+}
+
 /* Padding config */
 .header-padding {
   padding-top: 3.5em;
@@ -57,8 +66,8 @@ p {
     padding-bottom: 10em;
   }
   .main-padding {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
   }
 }
 
