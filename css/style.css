@@ -41,6 +41,10 @@ p {
 }
 
 /* Icon anchor tags */
+.anchor-icon {
+  transition: .5s;
+}
+
 .anchor-icon:link, .anchor-icon:visited, .anchor-icon:active {
   color: black;
 }
