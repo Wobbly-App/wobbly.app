@@ -2,41 +2,53 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Background image */
+.background-image {
+  background-color: #ffdfdf;
+  /* background-image: url("https://storage.googleapis.com/bananananaba.com/Resources/Pictures/trees.jpg");
+  background-size: cover;
+  background-position: center center; */
+}
+
 /* Header */
 h1, h3 {
   color: black;
 }
 
 h1 {
-  font-size: 400%;
+  font-size: 300%;
+}
+
+h3 {
+  font-size: 135%;
 }
 
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 600%;
   }
-}
-
-h3 {
-  font-size: 150%;
-}
-
-/* Background image */
-.background-image {
-  background-image: url("https://storage.googleapis.com/bananananaba.com/Resources/Pictures/trees.jpg");
-  background-size: cover;
-  background-position: center center;
+  h3 {
+    font-size: 150%;
+  }
 }
 
 /* Padding config */
-.padding-vertical {
-  padding-top: 8em;
-  padding-bottom: 8em;
+.header-padding {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-padding {
+    padding-top: 20em;
+    padding-bottom: 20em;
+  }
 }
 
 /* Modified Containers */
 
 .ui.fluid.container {
+  /* Removes margins on responsive design! */
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
