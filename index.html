@@ -1,132 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.1/dist/semantic.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.1/dist/semantic.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <title>Wobbly</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <title>Wobbly</title>
-</head>
-
-<body class="w-100 helvetica bg-near-white near-black">
-  <!-- Nav -->
-  <div class="w-100 pa3 ph5-ns bg-washed-red">
-    <div class="db dt-ns mw9 center w-100">
-      <div class="db dtc-ns v-mid tl w-50">
-        <a class="dib f5 f4-ns fw6 mb1 link black-70" href="/">Wobbly</a>
-      </div>
-      <nav class="db dtc-ns v-mid w-100 tl tr-ns mt2 mt0-ns">
-        <a class="f5 fw5 hover-dark-red link black-70 mr2 dib" href="https://discord.gg/yjEUbVX"><span
-            class="fab fa-discord"></span> Discord</a>
-        <a class="f5 fw5 hover-dark-red link black-70 mr2 dib" href="https://discourse.wobbly.app"><span
-            class="fab fa-discourse"></span> Forum</a>
-        <a class="f5 fw5 hover-dark-red link black-70 mr2 dib" href="https://github.com/wobbly-app/techno-syndicalism/"><span
-            class="fab fa-github"></span> GitHub</a>
-      </nav>
-    </div>
-  </div>
-  <!-- Header -->
-  <div class="w-100 center pa3 ph5-ns tc bg-washed-red">
-    <h1 class="lh-title f-headline-ns f1">The future of workers' power.</h1>
-    <h3 class="f3 fw5 lh-copy">Wobbly is a workplace organising platform. We’re creating a space for energetic, powerful,
-      and democratic unions to win struggles and grow.</h3>
-    <a class="f6 link dim br2 ba bw1 ph3 pv2 mb2 dib near-black" href="#links">Learn more</a>
-    <a class="f6 link dim br2 ba bw1 ph3 pv2 mb2 dib dark-red" href="#subscribe">Subscribe to our newsletter</a>
-  </div>
-  <!-- Overview -->
-  <div class="mw9 center ph3-ns ph2 mt0-ns mt3">
-    <div class="cf ph2-ns ph1">
-      <div class="fl w-100 w-third-ns">
-        <h2 class="f2 lh-title mv3-ns ma1">Organisation over mobilisation.</h2>
-      </div>
-      <div class="fl w-100 w-two-thirds-ns mv1">
-        <p class="lh-copy">Wobbly is optimised for the organising model of union action: 
-          the patterns of interaction that we aim to make easiest are the actions that 
-          create workplaces with 90% union membership, that have strong presences in the 
-          community and feel as if they are the property of the members, not distant officials. <a class="link underline dark-blue hover-dark-red" href="http://notesfrombelow.org/article/an-introduction-to-wobbly">Read the full introduction.</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="mw9 center ph3-ns ph2">
-    <div class="cf ph2-ns ph1">
-      <div class="fl w-100 w-third-ns">
-        <h2 class="f2 lh-title mv3-ns ma1">Developed democratically.</h2>
-      </div>
-      <div class="fl w-100 w-two-thirds-ns mv1">
-        <p class="lh-copy">Wobbly uses a development methodology called 'Convocational Development',
-          where the focus is on creating a community of developers, users, designers and facilitators that 
-          can work out the needs of the users and features of the app together. <a class="link underline dark-blue hover-dark-red" href="https://bananananaba.com/Convocational.html">Learn more about our development process.</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="mw9 center ph3-ns ph2">
-    <div class="cf ph2-ns ph1">
-      <div class="fl w-100 w-third-ns">
-        <h2 class="f2 lh-title mv3-ns ma1" id="subscribe">Stay in the loop.</h2>
-      </div>
-      <div class="fl w-100 w-two-thirds-ns mv1">
-        <p class="lh-copy">Join our mailing list to get updates on the development of Wobbly.</p>
-        <form class="button-reset input-reset center" action="https://tinyletter.com/Wobbly" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Wobbly', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-          <input placeholder="Email" type="text" style="width:140px" name="email" id="tlemail" /><input type="hidden" value="1"
-            name="embed" /><input type="submit" value="Subscribe" />
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- Links -->
-  <div class="mw9 center ph3-ns" id="links">
-    <div class="cf ph2-ns">
-      <div class="fl w-100 w-third-ns pa2">
-        <div class="mw5 center mt3 tc pa4-ns mv3-ns">
-          <a class="link near-black hover-dark-red" href="https://discord.gg/KxC96yY">
-            <div>
-              <h1 class="f1"><span class="fab fa-discord"></span></h1>
-              <h1 class="f4">Discord</h1>
-              <p class="tc lh-copy measure center f6">
-                Chat to us on Discord.
-              </p>
-            </div>
-          </a>
+  <body>
+    <header class="ui fluid container background-image">
+      <div class="ui center aligned container header-padding">
+        <h1>The Future of Workers' Power</h1>
+        <div class="small-responsive-container">
+          <h4>Wobbly is a workplace organising platform. We’re creating a space for energetic, powerful,
+            and democratic unions to win struggles and grow</h4>
         </div>
       </div>
-      <div class="fl w-100 w-third-ns pa2">
-        <div class="mw5 center mt3 tc pa4-ns mv3-ns">
-          <a class="link near-black hover-dark-red" href="https://discourse.wobbly.app">
-            <div>
-              <h1 class="f1"><span class="fab fa-discourse"></span></h1>
-              <h1 class="f4">Forum</h1>
-              <p class="tc lh-copy measure center f6">
-                Join the discussion on our forum.
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="fl w-100 w-third-ns pa2">
-        <div class="mw5 center mt3 tc pa4-ns mv3-ns">
-          <a class="link near-black hover-dark-red" href="https://github.com/wobbly-app/techno-syndicalism/">
-            <div>
-              <h1 class="f1"><span class="fab fa-github"></span></h1>
-              <h1 class="f4">GitHub</h1>
-              <p class="tc lh-copy measure center f6">
-                View the source code.
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+    </header>
 
+    <section class="ui container main-padding">
+      <div class="ui equal width stackable grid">
+        <div class="row">
+          <div class="column">
+            <div class="ui basic segment">
+              <h2>Organisation over mobilisation</h2>
+              <p>Wobbly is optimized for organizing union action: the
+              interaction patterns we want to make are the actions that make
+              for unions with 90% membership, that have a strong community
+              grounding, and feel as they are the property of members, not
+              distant officials.
+              <a href="http://notesfrombelow.org/article/an-introduction-to-wobbly">Read the full introduction.</a></p>
+            </div>
+            <div class="ui basic segment">
+              <h2>Developed democratically</h2>
+              <p>Wobbly uses <a href="https://bananananaba.com/Convocational.html">
+              Convocational Development</a>, a development methodology focused
+              on creating a community of developers, users, designers, and
+              facilitators, who can work out the needs and features together.</p>
+            </div>
+          </div>
+          <div class="six wide column">
+            <div class="ui basic segment">
+              <h2>Stay updated</h2>
+              <p>Subscribe to our mailing list for updates on development.</p>
+
+              <form class="ui form" action="https://tinyletter.com/Wobbly" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Wobbly', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                <div class="field">
+                  <input placeholder="Email" type="text" name="email" id="tlemail"/>
+                  <input type="hidden" value="1"name="embed" />
+                </div>
+                <div class="field">
+                  <input class="ui button" type="submit" value="Subscribe" />
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ui container main-padding">
+      <div class="ui stackable center aligned grid">
+        <div class="three column row">
+          <div class="column">
+            <a class="anchor-icon" href="https://discord.gg/KxC96yY">
+              <i class="massive discord icon"></i>
+              <h3>Discord</h3>
+              <p>Chat with us on Discord</p>
+            </a>
+          </div>
+          <div class="column">
+            <a class="anchor-icon" href="https://discourse.wobbly.app">
+              <i class="massive comments icon"></i>
+              <h3>Forum</h3>
+              <p>Join our forum discussions</p>
+            </a>
+          </div>
+          <div class="column">
+            <a class="anchor-icon" href="https://github.com/Wobbly-App">
+              <i class="massive github icon"></i>
+              <h3>GitHub</h3>
+              <p>View the source code</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
