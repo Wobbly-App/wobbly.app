@@ -1,3 +1,14 @@
+@import url('https://rsms.me/inter/inter.css');
+html {
+  font-family: 'Inter', sans-serif !important;
+  color: #303952;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif !important;
+  }
+}
+
 body {
   background-color: #f4f4f4;
 }
@@ -5,18 +16,11 @@ body {
 /* Background image */
 .background-image {
   background-color: #ffdfdf;
-  /* background-image: url("https://storage.googleapis.com/bananananaba.com/Resources/Pictures/trees.jpg");
-  background-size: cover;
-  background-position: center center; */
 }
 
 /* Text formatting */
 h1, h2, h3 {
   font-family: 'Rubik', sans-serif;
-}
-
-h4 {
-  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -29,6 +33,10 @@ h2 {
 
 h3, h4 {
   font-size: 135%;
+}
+
+h4 {
+  font-weight: 300;
 }
 
 p {
