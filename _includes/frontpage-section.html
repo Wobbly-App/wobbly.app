@@ -1,0 +1,14 @@
+{% assign mod = include.order | modulo: 2 %}
+
+<div class="frontpage-section">
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <div class="title-box wobblyshadow gradient">
+        <h2 class="text-center">{{ include.title }} {{ include.order }}</h2>
+      </div>
+      <p>
+        {{ include.content}}
+      </p>
+    </div>
+  </div>
+</div>
