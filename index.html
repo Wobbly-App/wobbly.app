@@ -1,121 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="avsWgcQOWnU6hbUAOG1HDOd5tHuKmR5iHbZEq4xv4RY" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.1/dist/semantic.min.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.1/dist/semantic.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Wobbly: 21st Century Worker's Power</title>
-    <!-- Matomo -->
-    <script type="text/javascript">
-      var _paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="https://stats.taocloud.online/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '4']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><p><img src="https://stats.taocloud.online/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Matomo Code -->
-  </head>
+---
+layout: frontpage
+title: 21st century workers' power
+---
 
-  <body>
-    <header class="ui fluid container background-image">
-      <div class="ui center aligned container header-padding">
-        <h1>The Future of Workers' Power</h1>
-        <div class="small-responsive-container">
-          <h4>Wobbly is a workplace organising platform, currently under development. We’re creating a space for energetic, powerful,
-            and democratic unions to win struggles and grow.</h4>
-        </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col">
+      <div class="jumbotron frontpage-jumbotron gradient wobblyshadow">
+        <h1 class="wobbly-title text-center">The Future of Workers' Power</h1>
       </div>
-    </header>
+    </div>
+  </div>
 
-    <section class="ui container main-padding">
-      <div class="ui equal width stackable grid">
-        <div class="row">
-          <div class="column">
-            <div class="ui basic segment">
-              <h2>Organisation over mobilisation</h2>
-              <p>Wobbly is optimized for organizing union action: the
-              interaction patterns we want to make are the actions that make
-              for unions with 90% membership, that have a strong community
-              grounding, and feel as they are the property of members, not
-              distant officials.
-              <a href="http://notesfrombelow.org/article/an-introduction-to-wobbly">Read the full introduction.</a></p>
-            </div>
-            <div class="ui basic segment">
-              <h2>Developed democratically</h2>
-              <p>Wobbly uses <a href="https://bananananaba.com/Convocational.html">
-              Convocational Development</a>, a development methodology focused
-              on creating a community of developers, users, designers, and
-              facilitators, who can work out the needs and features together.</p>
-            </div>
-          </div>
-          <div class="six wide column">
-            <div class="ui basic segment">
-              <h2>Stay updated</h2>
-              <p>Subscribe to our mailing list for updates on development.</p>
+  <p class="lead text-center">
+    Wobbly is a workplace organising platform, currently under development. We’re creating a space for energetic,
+    powerful, and democratic unions to win struggles and grow.
+  </p>
 
-              <form class="ui form" action="https://tinyletter.com/Wobbly" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Wobbly', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-                <div class="field">
-                  <input placeholder="Email" type="text" name="email" id="tlemail"/>
-                  <input type="hidden" value="1"name="embed" />
-                </div>
-                <div class="field">
-                  <input class="ui button" type="submit" value="Subscribe" />
-                </div>
-              </form>
+  {% assign sections = site.frontpage-sections | sort: 'order' %}
+  {% for section in sections %}
+    {% include frontpage-section.html title=section.title content=section.content %}
+  {% endfor %}
 
-            </div>
-          </div>
-        </div>
+  <div class="frontpage-links">
+    <div class="row">
+      <div class="col-sm-3 text-center frontpage-link">
+        <a href="{{ site.discord_link }}">
+          <i class="fab fa-discord fa-5x"></i>
+          <span class="frontpage-link-title">Discord</span>
+          <p>Chat with us on Discord</p>
+        </a>
       </div>
-    </section>
-
-    <footer class="ui container main-padding">
-      <div class="ui stackable center aligned grid">
-        <div class="four column row">
-          <div class="column">
-            <a class="anchor-icon" href="https://discord.gg/KxC96yY">
-              <i class="massive discord icon"></i>
-              <h3>Discord</h3>
-              <p>Chat with us on Discord</p>
-            </a>
-          </div>
-          <div class="column">
-            <a class="anchor-icon" href="https://discourse.wobbly.app">
-              <i class="massive comments icon"></i>
-              <h3>Forum</h3>
-              <p>Join our forum discussions</p>
-            </a>
-          </div>
-          <div class="column">
-            <a class="anchor-icon" href="https://wiki.wobbly.app/">
-              <i class="massive book icon"></i>
-              <h3>Wiki</h3>
-              <p>Read our wiki</p>
-            </a>
-          </div>
-          <div class="column">
-            <a class="anchor-icon" href="https://github.com/Wobbly-App">
-              <i class="massive github icon"></i>
-              <h3>GitHub</h3>
-              <p>View the source code</p>
-            </a>
-          </div>
-        </div>
+      <div class="col-sm-3 text-center frontpage-link">
+        <a href="{{ site.forum_link }}">
+          <i class="fab fa-discourse fa-5x"></i>
+          <span class="frontpage-link-title">Forum</span>
+          <p>Join our forum discussions</p>
+        </a>
       </div>
-    </footer>
-  </body>
-</html>
+      <div class="col-sm-3 text-center frontpage-link">
+        <a href="{{ site.wiki_link }}">
+          <i class="fas fa-book fa-5x"></i>
+          <span class="frontpage-link-title">Wiki</span>
+          <p>Read our wiki</p>
+        </a>
+      </div>
+      <div class="col-sm-3 text-center frontpage-link">
+        <a href="{{ site.github_link }}">
+          <i class="fab fa-github fa-5x"></i>
+          <span class="frontpage-link-title">GitHub</span>
+          <p>View the source code</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

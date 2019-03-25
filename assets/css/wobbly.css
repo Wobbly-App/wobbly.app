@@ -1,0 +1,138 @@
+@import url('https://rsms.me/inter/inter.css');
+html {
+  font-family: 'Inter', sans-serif !important;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif !important;
+  }
+}
+
+
+body {
+  background-color: #F5F8FA;
+  color: #182026;
+}
+
+/* Text formatting */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #ed2826;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #182026;
+}
+
+.wobbly-navbar {
+  background-color: #020b0e;
+}
+
+.wobbly-navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.wobbly-navbar a:hover {
+  color: #ed2826;
+}
+
+.navbar-logo {
+  border-radius: 50%;
+}
+
+.wobbly-title {
+  font-size: 3.5em;
+  font-weight: 900;
+}
+
+.frontpage-jumbotron {
+  margin-top: 2em;
+  padding: 1em 0;
+}
+
+@media (min-width: 768px) { 
+  .frontpage-jumbotron {
+    padding: 6em 0;
+  }
+}
+
+.frontpage-section {
+  margin: 3em 0;
+}
+
+.frontpage-section-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-box {
+  padding: 1em;
+  margin: 1em 0 1.5em 0;
+}
+
+.title-box h1, .title-box h2 {
+  font-weight: 700;
+}
+
+.frontpage-form {
+  text-align: center;
+}
+
+.frontpage-links a {
+  color: #020b0e;
+  text-decoration: none;
+}
+
+.frontpage-links a:hover {
+  color: #ed2826;
+}
+
+.frontpage-link {
+  margin-bottom: 3em;
+}
+
+.frontpage-link-title {
+  display: block;
+  font-size: 150%;
+}
+
+.post-list-entry {
+  margin-bottom: 4em;
+}
+
+.post-list-date {
+  color: #515455;
+}
+
+.pagination {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination .page_number {
+  margin: 0 2em;
+}
+
+.page-image {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.wobblyshadow {
+  box-shadow: 0 18px 0 -6px rgba(0,0,0,.6);
+}
+
+.gradient {
+  background: rgb(241,96,95);
+  background: linear-gradient(131deg, rgba(241,96,95,1) 0%, rgba(237,40,38,1) 100%); 
+  color: white;
+}
