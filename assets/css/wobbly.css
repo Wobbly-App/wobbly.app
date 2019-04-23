@@ -1,9 +1,8 @@
-@import url("https://rsms.me/inter/inter.css");
-html {
+body {
   font-family: "Inter", sans-serif !important;
 }
 @supports (font-variation-settings: normal) {
-  html {
+  body {
     font-family: "Inter var", sans-serif !important;
   }
 }
@@ -14,31 +13,71 @@ body {
 }
 
 /* Text formatting */
-h1,
-h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
+h1 {
+  font-size: 81px;
+  letter-spacing: -0.055em;
+  line-height: 0.9em;
+  text-indent: -0.03em;
+  margin-top: 10px;
+  font-weight: 740;
+}
+/* title scales as window shrinks */
+@media only screen and (max-width: 988px) {
+  h1 {
+    font-size: calc(100vw / 12.2);
+  }
+}
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: calc(100vw / 12.5);
+  }
+}
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: calc(100vw / 12.8);
+  }
+}
+@media only screen and (max-width: 660px) {
+  h1 {
+    font-size: calc(100vw / 13.2);
+  }
+}
+@media only screen and (max-width: 565px) {
+  h1 {
+    font-size: 60px;
+    letter-spacing: -0.045em;
+    text-indent: -0.012em;
+    line-height: 1em;
+  }
+}
+
+h2 {
+  font-weight: 700;
 }
 
 a {
   color: #ed2826;
-  text-decoration: underline;
 }
 
 a:hover {
   color: #182026;
+  text-decoration: none;
 }
 
-.wobbly-navbar {
+.wobbly-navbar,
+.wobbly-footer {
   background-color: #020b0e;
 }
 
-.wobbly-navbar a {
+.wobbly-navbar a,
+.wobbly-footer a,
+.wobbly-footer {
   color: white;
   text-decoration: none;
 }
 
-.wobbly-navbar a:hover {
+.wobbly-navbar a:hover,
+.wobbly-footer a:hover {
   color: #ed2826;
 }
 
@@ -51,12 +90,22 @@ a:hover {
 }
 
 .wobbly-title {
+  font-family: "Montserrat", "Inter", "sans-serif";
   font-size: 3.5em;
   font-weight: 900;
+  letter-spacing: normal;
+  margin-bottom: 4rem;
+}
+.wobbly-subtitle {
+  font-weight: 400;
 }
 
 .wobbly-splash {
   background-color: #ffdfdf;
+}
+
+.wobbly-post h2 {
+  margin-top: 1em;
 }
 
 .frontpage-section {
@@ -95,11 +144,12 @@ a:hover {
   font-size: 150%;
 }
 
-.post-list-entry {
-  margin-bottom: 4em;
+.post-list-date {
+  color: #515455;
 }
 
-.post-list-date {
+.post-date {
+  margin: 2em 0;
   color: #515455;
 }
 
@@ -163,4 +213,10 @@ a:hover {
   bottom: 0;
   left: 5%;
   background-color: #ffc3c3;
+}
+
+.wobbly-post img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
