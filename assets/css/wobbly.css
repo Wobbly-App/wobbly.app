@@ -126,6 +126,10 @@ a:hover {
   text-align: center;
 }
 
+.frontpage-links {
+  margin-top: 5em;
+}
+
 .frontpage-links a {
   color: #020b0e;
   text-decoration: none;
