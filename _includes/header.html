@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="google-site-verification" content="avsWgcQOWnU6hbUAOG1HDOd5tHuKmR5iHbZEq4xv4RY" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik|Montserrat:400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="/assets/css/wobbly.css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#ed2826">
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ed2826">
-    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ed2826">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification" content="avsWgcQOWnU6hbUAOG1HDOd5tHuKmR5iHbZEq4xv4RY" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik|Montserrat:400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="/assets/css/wobbly.css" />
 
-    <title>Wobbly | {{ page.title }}</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#ed2826">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ed2826">
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ed2826">
 
-    <!-- Matomo -->
-    <script type="text/javascript">
-      var _paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="https://stats.taocloud.online/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '4']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><p><img src="https://stats.taocloud.online/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Matomo Code -->
-  </head>
+  <title>Wobbly | {{ page.title }}</title>
 
-  <body>
-    <nav class="navbar navbar-expand-lg wobbly-navbar">
-        <a class="navbar-brand" href="/">
-            <img src="/assets/img/logo.png" width="38" height="38" class="d-inline-block align-top navbar-logo" alt="Wobbly logo">
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blog">Blog</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.discord_link }}"><i class="fab fa-discord"></i> Discord</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.forum_link }}"><i class="fab fa-discourse"></i> Forum</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.wiki_link }}"><i class="fas fa-book"></i> Wiki</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.github_link }}"><i class="fab fa-github"></i> GitHub</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://stats.taocloud.online/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '4']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <noscript>
+    <p><img src="https://stats.taocloud.online/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p>
+  </noscript>
+  <!-- End Matomo Code -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg wobbly-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/assets/img/logo.png" width="38" height="38" class="d-inline-block align-top navbar-logo"
+          alt="Wobbly logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.discord_link }}"><i class="fab fa-discord"></i> Discord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.forum_link }}"><i class="fab fa-discourse"></i> Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.wiki_link }}"><i class="fas fa-book"></i> Wiki</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.github_link }}"><i class="fab fa-github"></i> GitHub</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
