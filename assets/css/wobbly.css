@@ -55,25 +55,12 @@ a:hover {
   font-weight: 900;
 }
 
-.frontpage-jumbotron {
-  margin-top: 2em;
-  padding: 1em 0;
-}
-
-@media (min-width: 768px) {
-  .frontpage-jumbotron {
-    padding: 6em 0;
-  }
+.wobbly-splash {
+  background-color: #ffdfdf;
 }
 
 .frontpage-section {
   margin: 3em 0;
-}
-
-.frontpage-section-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .title-box {
@@ -141,4 +128,39 @@ a:hover {
   background: rgb(241, 96, 95);
   background: linear-gradient(131deg, rgba(241, 96, 95, 1) 0%, rgba(237, 40, 38, 1) 100%);
   color: white;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #ffc3c3;
 }
