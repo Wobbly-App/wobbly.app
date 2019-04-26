@@ -1,5 +1,5 @@
-# Wobbly App
+# wobbly.app
 
-The Jekyll site for the Wobbly app, at https://wobbly.app/
+The Jekyll site for Wobbly, live at https://wobbly.app/.
 
-Built using the [Fomantic UI](https://fomantic-ui.com/) CSS framework, a maintained fork of the Semantic UI framework.
+Built using [Bootstrap 4](https://getbootstrap.com/). Uses the [Inter](https://rsms.me/inter/) font.
