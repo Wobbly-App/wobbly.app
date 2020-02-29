@@ -1,4 +1,4 @@
-# wobbly.app
+# Wobbly App
 
 The Jekyll site for Wobbly, live at https://wobbly.app/.
 
