@@ -22,7 +22,7 @@ Here’s some screenshots of a group of Xylophone enthusiasts speaking to some Z
 
 In the pictures you can see my account sends a message, then the message is deleted and replaced with the correct group depending on which server I sent the message from.
 
-![Discord screenshot of two bot users, named Common Knowledge and Code-Operative discussing a recent gathering in Glasgow](https://wobbly.app/assets/img/codeop%20common%20knowledge%20talking%203.png "Here's another example of it actually in use, a coop called Common Knowledge asked Code-Operative about a recent coop gathering in Glasgow.")
+![Discord screenshot of two bot users, named Common Knowledge and Code-Operative discussing a recent gathering in Glasgow](https://wobbly.app/assets/img/codeop%20common%20knowledge%20talking.png "Here's another example of it actually in use, a coop called Common Knowledge asked Code-Operative about a recent coop gathering in Glasgow.")
 
 
 ## How did you do this?
