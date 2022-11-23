@@ -12,7 +12,8 @@ In my wildest dreams, Space Tube enables coordination and collaboration of group
 
 I’ve made a discord bot that relays conversations from one discord server to another, turning messages from individuals within a group into messages from that group posted in both groups’s servers.
 
-Here’s some screenshots of a group of Xylophone enthusiasts speaking to some Zebra aficionados. 
+Here’s some screenshots of a group of Xylophone enthusiasts speaking to some Zebra aficionados. In the pictures you can see my account sends a message, then the message is deleted and replaced with the correct group depending on which server I sent the message from.
+
 
 ![Discord screenshot of channel, with post from user king-mob asking what's up](https://wobbly.app/assets/img/space%20tube%20demo%20sequence%201.png "User sends message")
 
@@ -20,7 +21,7 @@ Here’s some screenshots of a group of Xylophone enthusiasts speaking to some Z
 
 ![Discord screenshot of channel, with post from zebra afficiandos replying that they're demonstrating space tube](https://wobbly.app/assets/img/space%20tube%20demo%20sequence%203.png "Reply from the other group that can see the message")
 
-In the pictures you can see my account sends a message, then the message is deleted and replaced with the correct group depending on which server I sent the message from.
+Here's another example of it actually in use, a coop called Common Knowledge asked Code-Operative about a recent coop gathering in Glasgow.
 
 ![Discord screenshot of two bot users, named Common Knowledge and Code-Operative discussing a recent gathering in Glasgow](https://wobbly.app/assets/img/codeop%20common%20knowledge%20talking.png "Here's another example of it actually in use, a coop called Common Knowledge asked Code-Operative about a recent coop gathering in Glasgow.")
 
